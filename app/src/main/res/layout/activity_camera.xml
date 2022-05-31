@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE8FF"
+    tools:context=".CameraActivity">
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#112A75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="255dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/quotes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E9EDF4"
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:text='"Dogs do speak, but only to those who listen"'
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageButton
+        android:id="@+id/breed_info_btn"
+        android:layout_width="95dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/heart"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/add_to_fav_btn"
+        android:layout_width="103dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@drawable/cam1_img1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/fav"
+        android:text="Favorites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed_info_btn"
+        app:layout_constraintVertical_bias="0.105"
+        style="@style/text_main" />
+
+    <TextView
+        android:id="@+id/scan"
+        style="@style/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_fav_btn"
+        app:layout_constraintVertical_bias="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>

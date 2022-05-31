@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recommendation_Activity"
+    tools:layout_editor_absoluteX="-196dp"
+    android:background="#DCE8FF"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="394dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button_send_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/ignore"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="Ignore" />
+
+        <CheckBox
+            android:id="@+id/ignore_energy_level"
+            android:layout_width="130dp"
+            android:layout_height="53dp"
+            android:minHeight="48dp"
+            android:text="Energy Level" />
+
+        <CheckBox
+            android:id="@+id/ignore_trainability"
+            android:layout_width="119dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="Trainability" />
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/low_shedding"-->
+        <!--            android:layout_width="88dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="Working" />-->
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/sporting_group"-->
+        <!--            android:layout_width="93dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_marginEnd="40dp"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="Sporting" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/high_shedding"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="Shedding" />-->
+
+        <TextView
+            android:id="@+id/high"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:text="High" />
+
+        <CheckBox
+            android:id="@+id/high_trainability"
+            android:layout_width="119dp"
+            android:layout_height="53dp"
+            android:minHeight="48dp"
+            android:text="Trainability" />
+
+        <CheckBox
+            android:id="@+id/high_demeanor"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="Demeanor" />
+
+        <CheckBox
+            android:id="@+id/high_expectancy"
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:minHeight="48dp"
+            android:text="Expectancy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="392dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Group" />
+
+        <CheckBox
+            android:id="@+id/toy_group"
+            android:layout_width="62dp"
+            android:layout_height="53dp"
+            android:minHeight="48dp"
+            android:text="Toy" />
+
+        <CheckBox
+            android:id="@+id/terrier_group"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="Terrier" />
+
+        <CheckBox
+            android:id="@+id/working_group"
+            android:layout_width="94dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="Working" />
+
+        <CheckBox
+            android:id="@+id/sporting_group"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:minHeight="48dp"
+            android:text="Sporting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="389dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Important"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/imp_group"
+            android:layout_width="91dp"
+            android:layout_height="53dp"
+            android:minHeight="48dp"
+            android:text="Group" />
+
+        <CheckBox
+            android:id="@+id/imp_height"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="Height" />
+
+        <CheckBox
+            android:id="@+id/imp_weight"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="Weight" />
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/sporting_group"-->
+        <!--            android:layout_width="93dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_marginEnd="40dp"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="Sporting" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_send_post"
+        style="@style/button"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/purple_700"
+        android:text="SimilarBreed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView_response"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_send_get"
+        style="@style/button"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:text="PopularBreed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView_response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/button_send_post" />
+
+    <TextView
+        android:id="@+id/textView_response"
+        android:layout_width="303dp"
+        android:layout_height="112dp"
+        android:scrollbars="vertical"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="395dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Low" />
+
+        <CheckBox
+            android:id="@+id/low_height"
+            android:layout_width="87dp"
+            android:layout_height="53dp"
+            android:minHeight="48dp"
+            android:text="Height" />
+
+        <CheckBox
+            android:id="@+id/low_weight"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="Weight" />
+
+        <CheckBox
+            android:id="@+id/low_shedding"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="Shedding" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtField_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

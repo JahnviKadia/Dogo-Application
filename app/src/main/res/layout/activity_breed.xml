@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE8FF"
+    android:paddingLeft="10dp"
+    tools:context=".BreedActivity">
+
+    <ImageView
+        android:id="@+id/dog_img"
+        android:layout_width="239dp"
+        android:layout_height="261dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/Breed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#F8F6F6"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Breed Name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog_img"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <ImageButton
+        android:id="@+id/breed_info_btn"
+        android:layout_width="95dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/info6"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/add_to_fav_btn"
+        android:layout_width="103dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@drawable/addfav"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/fav"
+        style="@style/text_main"
+        android:text="Breed Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed_info_btn"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/scan"
+        style="@style/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AddToFav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_fav_btn"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/recommend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:background="@drawable/button_round"
+        android:textColor="#FFFFFF"
+        android:text="See Similar Breeds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fav" />
+
+    <Button
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="686dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

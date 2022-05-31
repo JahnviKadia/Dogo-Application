@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DoGo</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="DoGo">DoGo</string>
+    <string name="dogs_do_speak_but_only_to_those_who_listen">Dogs do speak, but only to those who listen</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="new_user_get_started">New User? Get Started</string>
+    <string name="signup">SignUp</string>
+    <string name="welcome_to_dogo_application">Dogs are not our whole life, but they make our lives whole.</string>
+    <string name="todo1">TODO</string>
+    <string name="create_profile">CREAT PROFILE</string>
+    <string name="name">Name:</string>
+    <string name="surname">"Surname : "</string>
+    <string name="phone_number">"Phone Number : "</string>
+    <string name="e_mail">E-mail Address</string>
+    <string name="ok">OK</string>
+    <string name="ok1">OK</string>
+    <string name="enter_your_e_mail_here">Enter your E-mail here…</string>
+    <string name="reset_your_password">RESET YOUR PASSWORD</string>
+    <string name="signup1">SignUp</string>
+    <string-array name="dropdown">
+        <item>Value 1</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <item>Value 4</item>
+    </string-array>
+</resources>

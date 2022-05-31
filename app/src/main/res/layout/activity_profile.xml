@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_pic_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:foreground="@drawable/rounded_fg"
+        android:gravity="center_vertical"
+        android:src="@drawable/defavatar"
+        app:layout_constraintBottom_toBottomOf="@+id/profileList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
+        android:gravity="center_horizontal"
+        android:text="User Profile"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_pic_imageView"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <ListView
+        android:id="@+id/profileList"
+        android:layout_width="415dp"
+        android:layout_height="21dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_pic_imageView"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="97dp"
+        android:layout_height="61dp"
+        android:text="go back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_pic_imageView"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_pic_imageView"
+        app:layout_constraintVertical_bias="0.532" />
+</androidx.constraintlayout.widget.ConstraintLayout>

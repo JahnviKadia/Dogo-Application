@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE8FF"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/quotes_wel"
+        android:layout_width="203dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="DoGo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="64dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/signup_signup"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/poppins_bold"
+        android:text="sign up"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+    <Button
+        android:id="@+id/login_signup"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="#F1F0F0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_wel"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/login_wel"
+        android:layout_width="252dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Already a User?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_signup"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="268sp"
+        android:layout_height="55sp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E9EDF4"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#1B1919"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_singup"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/email_singup"
+        android:layout_width="268dp"
+        android:layout_height="55dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E9EDF4"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="#494747"
+        android:textColor="#1C1B1B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog_img"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <ImageView
+        android:id="@+id/dog_img"
+        android:layout_width="243dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes_wel"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/dog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

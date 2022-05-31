@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DCE8FF">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="220dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_unnamed" />
+
+    <TextView
+        android:id="@+id/quotes_wel"
+        android:layout_width="347dp"
+        android:layout_height="86dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#F8F5F5"
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:gravity="center"
+        android:text="&quot;Dogs are not our whole life, but they make our lives whole&quot;"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/singup_wel"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes_wel"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/dogo"
+        android:layout_width="181dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="DoGo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/login_wel"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singup_wel"
+        app:layout_constraintVertical_bias="0.147" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
